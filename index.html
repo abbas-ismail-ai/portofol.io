@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portofolio pribadi Ismail Abbas — Islamic Educator dan mahasiswa Manajemen Pendidikan Islam.">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>Ismail Abbas — Portofolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+        <span class="brand-mark">IA</span>
+        <span class="brand-text">Ismail Abbas</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Buka navigasi</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#proyek">Proyek</a>
+        <a class="nav-cta" href="#kontak">Hubungi saya</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="hero-eyebrow"></p>
+          <h1 id="hero-title"></h1>
+          <p class="hero-role" id="hero-role"></p>
+          <p class="hero-intro" id="hero-intro"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="download-cv" href="assets/CV_Ismail_Abbas.docx" download>
+              <span>Download CV</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+            </a>
+            <a class="btn btn-secondary" id="contact-hero" href="#kontak">
+              <span>Hubungi Saya</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="hero-meta" id="hero-meta"></div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="portrait-stage">
+            <div class="portrait-halo" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <img id="profile-image" src="assets/profile-ismail.jpg" alt="Foto profil Ismail Abbas">
+            </div>
+            <div class="floating-card floating-card--top">
+              <span class="floating-icon">30</span>
+              <span><strong>Juz</strong><small>Hafiz Al-Qur'an</small></span>
+            </div>
+            <div class="floating-card floating-card--bottom">
+              <span class="status-dot"></span>
+              <span><strong>Terbuka</strong><small>Belajar & berkolaborasi</small></span>
+            </div>
+            <div class="decor decor--one" aria-hidden="true"></div>
+            <div class="decor decor--two" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#tentang" aria-label="Gulir ke bagian Tentang">
+        <span>Jelajahi</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+      </a>
+    </section>
+
+    <section class="section section-beige" id="tentang">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">01 / Tentang</p>
+          <h2>Membangun pendidikan Islam yang lebih profesional dan berkelanjutan.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-story reveal" id="about-story"></article>
+          <aside class="achievement-card reveal" data-delay="100" id="achievement-card"></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pendidikan">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="section-kicker">02 / Pendidikan</p>
+            <h2>Perjalanan belajar.</h2>
+          </div>
+          <p>Fondasi pesantren dan studi manajemen pendidikan Islam yang sedang berlangsung.</p>
+        </div>
+        <div class="education-grid" id="education-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="keahlian">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">03 / Keahlian</p>
+          <h2>Kompetensi yang terus dikembangkan.</h2>
+        </div>
+        <div class="skills-grid" id="skills-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="pengalaman">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="section-kicker">04 / Pengalaman</p>
+            <h2>Belajar melalui praktik dan pengabdian.</h2>
+          </div>
+          <p>Pengalaman observasi, pengajaran, kepemimpinan ibadah, serta kontribusi akademik.</p>
+        </div>
+        <div class="timeline" id="experience-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-beige" id="sertifikat">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">05 / Sertifikat</p>
+          <h2>Sertifikat dan pelatihan.</h2>
+        </div>
+        <div class="certificate-grid" id="certificate-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="proyek">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="section-kicker">06 / Proyek</p>
+            <h2>Gagasan yang disusun menjadi sistem.</h2>
+          </div>
+          <p>Proyek akademik yang tercantum dalam CV, dengan ruang untuk menambahkan teknologi dan tautan publikasi.</p>
+        </div>
+        <div class="projects-grid" id="project-list"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="section-kicker section-kicker--light">07 / Kontak</p>
+            <h2>Mari bertukar gagasan tentang pendidikan Islam.</h2>
+            <p>Saya terbuka untuk belajar, berkolaborasi, dan berkontribusi dalam pengembangan pendidikan Islam yang bermanfaat bagi umat.</p>
+            <a class="btn btn-light" id="email-cta" href="#">
+              <span>Kirim Email</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="contact-list" id="contact-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-mark brand-mark--small">IA</span>
+        <p>Dibangun dari data CV Ismail Abbas.</p>
+      </div>
+      <p>© <span id="current-year"></span> Ismail Abbas.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5"/></svg>
+  </button>
+
+  <noscript>
+    <div class="noscript">Aktifkan JavaScript agar seluruh konten portofolio dapat ditampilkan.</div>
+  </noscript>
+
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
